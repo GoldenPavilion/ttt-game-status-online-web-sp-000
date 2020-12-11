@@ -49,4 +49,5 @@ end
 def winner(board)
   if won?(board)
     return board[won?(board, combo[0])]
+  end
 end
