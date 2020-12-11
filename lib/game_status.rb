@@ -24,4 +24,6 @@ end
 
 def full?(board)
   board.all? do |spaces|
+    spaces == "X" || spaces == "O"
+  end
 end
