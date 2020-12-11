@@ -16,8 +16,9 @@ WIN_COMBINATIONS = [
 
 def won? (board)
   WIN_COMBINATIONS.each do |combo|
-    board[combo[0]] == board[combo[1]] &&
-    board[combo[1]] == board[combo[2]] &&
-    position_taken?(board[combo[0]])
+    win_index_1 = combo[0]
+    win_index_2 = combo[1]
+    win_index_3 = combo[2]
+    win_index_4 = combo[3]
   end
 end
