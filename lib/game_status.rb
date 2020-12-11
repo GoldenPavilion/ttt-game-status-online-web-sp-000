@@ -29,3 +29,4 @@ def full?(board)
 end
 
 def draw(board)
+  if board == won?
